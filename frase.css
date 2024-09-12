@@ -24,38 +24,42 @@
 
 #testoAlternato .parole i {
   color: rgb(123, 159, 173);
+  position: absolute;
+}
+
+.parole {
+  position: relative;
   display: inline-block;
+  width: 200px;
 }
 
 #testoAlternato .parole i:nth-child(1) {
   transform: translateY(-20px);
   opacity: 0;
-  animation: rotation 3s infinite;
+  animation: rotation 3s;
 }
 #testoAlternato .parole i:nth-child(2) {
-  transform: translateX(-146px);
   transform: translateY(-20px);
   opacity: 0;
-  animation: rotation 3s 3s infinite;
+  animation: rotation 3s 2s;
 }
 #testoAlternato .parole i:nth-child(3) {
-  transform: translateX(-306px);
   transform: translateY(-20px);
   opacity: 0;
-  animation: rotation 3s 6s infinite;
+  animation: rotation 3s 4s;
 }
 
 @keyframes rotation {
   0% {
     opacity: 0;
-    transform: translateY(-10);
+    transform: translateY(-30px);
   }
   40% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(-20px);
   }
   100% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(0px);
   }
 }
